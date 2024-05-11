@@ -1,5 +1,5 @@
 
-import { Menu, Modal } from '../../types'
+import { Modal } from '../../types'
 
 
 interface useGlobalActionType {
