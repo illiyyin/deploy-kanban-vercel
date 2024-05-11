@@ -1,6 +1,6 @@
-import { useRecoilState } from 'recoil'
+
 import { Menu, Modal } from '../../types'
-import { menuState, modalState } from '../GlobalAtom'
+
 
 interface useGlobalActionType {
   updateMenu: (menuOpenId: number) => void
@@ -8,15 +8,13 @@ interface useGlobalActionType {
 }
 
 export const useGlobalAction = (): useGlobalActionType => {
-  const [modal, setModal] = useRecoilState<Modal>(modalState)
-  const [menu, setMenu] = useRecoilState<Menu>(menuState)
 
-  const updateMenu = (menuOpenId: number): void => {
-    setMenu({ menuOpenId })
+  const updateMenu = (): void => {
+
   }
 
-  const updateModal = (body: Modal): void => {
-    setModal({ ...body })
+  const updateModal = (): void => {
+
   }
 
   return {
